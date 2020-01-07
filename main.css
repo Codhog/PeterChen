@@ -78,6 +78,9 @@ html {
   margin-left: auto;
 }
 
+*.fa-github{font-size: 60px;}
+*.fa-linkedin{font-size: 60px;}
+
 .main{
   margin-left: 300px;
 }
@@ -96,10 +99,10 @@ html {
 
 
 .avatar {
-  vertical-align: middle;
+  position: relative;
   width: 148px;
   border: 1px solid black;
-  margin: auto;
+  margin-left: 8%;
   
   border-radius: 29%!important;
 }
@@ -116,4 +119,60 @@ html {
   margin-top: -65px;
   height: 65px;
   visibility: hidden;
+}
+
+/*  Modal */
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.myBtn {
+  width:250px;
+  
+}
+
+.myBtn:hover{
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+/* .modai :hover{
+
+
+} */
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
