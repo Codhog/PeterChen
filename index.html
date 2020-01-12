@@ -48,7 +48,7 @@
 
 
     <div class="container-fluid petercon">
-      <h1 style="margin-top: 250px;">About <p class="sp">Peter Chen</p>
+      <h1 style="margin-top: 250px;">About <span>Peter Chen</span>
       </h1>
       <h5>I'm currently a 23-years-old Front-End Developer Intern who is familiar with project management tools like
         Jira and proficient in Git commands. My major duty is website development using JavaScript Framework-Nuxt.JS as
@@ -68,13 +68,59 @@
 
       </div>
     </div>
+    
     <hr>
 
 
     <div class="container-fluid petercon" id="test1">
       <h1 style="margin-top: 250px;">Projects Portfolio</h1>
-      <div class="row">
-        <!-- Trigger/Open The Modal -->
+
+    <div class="row">
+      <div class="col-sm-6"><!-- Trigger/Open The Modal -->
+        <img id="myBtn" class="myBtn "src="img/d4.gif"/>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>2D top-down infinity-runner style shooting game. User is immersed in the space 
+              environment while trying to survive from infinity waves of enemies' spaceship.</p>
+              <p style="margin-top: 5px;">This is an open source Unity tutorial project.</p>
+          </div>
+
+        </div></div>
+      <div class="col-sm-6"><!-- Trigger/Open The Modal -->
+        <img id="myBtn" class="myBtn "src="img/d2.png"/>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+
+        </div></div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6"><!-- Trigger/Open The Modal -->
+        <img id="myBtn" class="myBtn "src="img/d2.png"/>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+
+        </div></div>
+      <div class="col-sm-6"><!-- Trigger/Open The Modal -->
         <img id="myBtn" class="myBtn "src="img/d2.png"/>
 
         <!-- The Modal -->
@@ -87,10 +133,8 @@
           </div>
 
         </div>
-
-
-
       </div>
+    </div>
     </div>
     <hr>
 
@@ -121,30 +165,48 @@
 
   <script>
     var modal = document.getElementById("myModal");
-  
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks the button, open the modal 
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
+    
+    // Get the button that opens the modal
+    var btn = document.getElementsByClassName("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close");
+    
+    // When the user clicks the button, open the 4 modals
+    btn[0].onclick = function() {
+      modal.style.display = "block";
+    }
+    btn[1].onclick = function() {
+      modal.style.display = "block";
+    }
+    btn[2].onclick = function() {
+      modal.style.display = "block";
+    }
+    btn[3].onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span[0].onclick = function() {
       modal.style.display = "none";
     }
-  }
-  </script>
+    span[1].onclick = function() {
+      modal.style.display = "none";
+    }
+    span[2].onclick = function() {
+      modal.style.display = "none";
+    }
+    span[3].onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 
 </body>
 
