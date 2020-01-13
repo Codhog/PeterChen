@@ -31,8 +31,14 @@ html {
   margin: 25px 30px;
    
 }
-
-
+.date{
+  position: relative;
+  margin-left: 800px;
+}
+#stack li{
+  margin-top: 200px;
+  position: relative;
+}
 
 .sidenav span:hover{
   transform: scale(1.2);
@@ -90,8 +96,13 @@ html {
 
 }
 
-*.fa-github{font-size: 60px;}
-*.fa-linkedin{font-size: 60px;}
+*.fab{
+  
+  font-size: 60px;
+
+
+}
+
 
 .main{
   margin-left: 300px;
