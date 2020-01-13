@@ -116,7 +116,22 @@ html {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
+
+  body {
+    background: rgb(161, 62, 62);
+  }
+
+  .sidenav {
+  color:rgb(161, 62, 62);
+  height: auto; /* Full-height: remove this if you want "auto" height */
+  width: 210px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  background-color: rgb(223, 192, 106); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  /* padding: 20px; */}
   .sidenav a {font-size: 18px;}
 }
 
