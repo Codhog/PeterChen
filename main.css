@@ -2,7 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-
+#contact{
+  /* position: relative; */
+  margin-top: 569px;
+  position:absolute; 
+  right:64px;
+}
 
 .sidenav {
   height: auto; /* Full-height: remove this if you want "auto" height */
@@ -17,7 +22,7 @@ html {
   /* padding: 20px; */
   
 }
-.sidenav span{
+#name{
   font-size: 20px;
   position: relative;
   color: white;
@@ -26,6 +31,8 @@ html {
   margin: 25px 30px;
    
 }
+
+
 
 .sidenav span:hover{
   transform: scale(1.2);
