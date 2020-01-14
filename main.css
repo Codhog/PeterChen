@@ -20,8 +20,8 @@ html {
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   /* padding: 20px; */
-  
-}
+  }
+
 #name{
   font-size: 20px;
   position: relative;
@@ -115,11 +115,37 @@ html {
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  
   body {
     
-    position: relative;
+    position: absolute;
   }
+  #name{
+  font-size: 50px;
+  position: relative;
+  color: white;
+  display: inline-block;
+  margin: 25px 30px;
+    
+
+  }
+  .main{
+    margin: 0 auto;
+    width:70%;
+  }
+  .logo{
+    float: right;
+
+  }
+  .date{
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    
+  }
+
+
 
   .avatar {
     position: relative;
@@ -131,9 +157,9 @@ html {
   }
 
   .sidenav {
-    height:210px;
-    width: 100%;
-    position: absolute;
+  height:210px;
+  width: 100%;
+  
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -142,6 +168,9 @@ html {
   padding-top: 20px;
   /* padding: 20px; */}
   .sidenav a {font-size: 18px;}
+
+
+
 } 
 
 
@@ -157,11 +186,9 @@ html {
 
 
 
-
 #test1::before,
 #test2::before,
 #test3::before {
-  
   content: " ";
   margin-top: -65px;
   height: 65px;
