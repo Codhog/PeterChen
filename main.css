@@ -22,18 +22,13 @@ html {
   /* padding: 20px; */
   }
 
-#name{
-  font-size: 20px;
-  position: relative;
-  color: white;
-  
-  display: inline-block;
-  margin: 25px 30px;
-   
-}
+
 .date{
   position: relative;
-  margin-left: 800px;
+  float: right;
+  overflow: hidden;
+  white-space: nowrap;
+  
 }
 #stack li{
   margin-top: 200px;
@@ -96,6 +91,12 @@ html {
 
 }
 
+.stackcon{
+  position: relative ;
+  margin-top: 100px;
+
+}
+
 *.fab{
   
   font-size: 60px;
@@ -121,14 +122,12 @@ html {
     
     position: absolute;
   }
-  #name{
-  font-size: 50px;
-  position: relative;
-  color: white;
-  display: inline-block;
-  margin: 25px 30px;
-    
-
+  
+  .petercon h5{
+    font-size: 1.8em;
+  }
+  .petercon .e1{
+    font-size: 1.8em;
   }
   .main{
     margin: 0 auto;
@@ -144,8 +143,20 @@ html {
     white-space: nowrap;
     
   }
+  .navbar-header{
+    display:inline-block;
+  }
 
+  .navbar-header img{
+    display:inline-block;
+  }
 
+  .navbar-header a{
+    display:inline-block;
+  }
+  .stackcon{
+    margin-top: 100%;
+  }
 
   .avatar {
     position: relative;
@@ -156,29 +167,48 @@ html {
     border-radius: 29%!important;
   }
 
+  
+
   .sidenav {
   height:210px;
   width: 100%;
-  
+  overflow: hidden;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   background-color: rgb(149, 218, 59); /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  
   padding-top: 20px;
   /* padding: 20px; */}
-  .sidenav a {font-size: 18px;}
+
+  .sidenav .name{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin-left: 56%;
+    margin-top: -6%;
+}
+  .nav li {display: none;}
 
 
 
 } 
 
+.logo{
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+    /* margin-right: 2%; */
+    padding:10%;
 
+  }
 .avatar {
   position: relative;
   width: 148px;
   border: 1px solid black;
-  margin-left: 8%;
+  /* margin-left: 8%; */
   
   border-radius: 29%!important;
 }
