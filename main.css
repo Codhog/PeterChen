@@ -3,10 +3,7 @@ html {
 }
 
 #contact{
-  /* position: relative; */
-  margin-top: 569px;
-  position:absolute; 
-  right:64px;
+  position: relative;
 }
 
 .sidenav {
@@ -108,7 +105,16 @@ html {
 .main{
   margin-left: 300px;
 }
-
+.sidenav .name{
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  color: white;
+  width: 100%;
+  text-align: center;
+  /* margin-left: 16%;
+  margin-top: 8%; */
+}
 
 
 
