@@ -46,18 +46,11 @@ html {
 }
 
 /* The navigation menu links */
-.sidenav a:hover {
-  
-  text-decoration: none;
-  font-size: 18px;
-  color: #818181;
-  display: block;
-  /* margin:10px 25px; */
-  text-align:left;
-  background:transparent;
+/* .name:hover {
+  transform: scale(1.2);
   transition: 0.3s;
 
-}
+} */
 
 /* When you mouse over the navigation links, change their color */
 .sidenav li:hover {
@@ -124,19 +117,25 @@ html {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-height: 812px) {
   .petercon {
     height:auto;
   }
   .stackcon{
-  
+    margin-top: 160%;
     height: auto;
   
   }
-
-
-
-
+}
+@media screen and (max-width: 320px) {
+  .petercon {
+    height:auto;
+  }
+  .stackcon{
+    margin-top: 300%;
+    height: auto;
+  
+  }
 }
 
 
@@ -289,7 +288,7 @@ html {
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
-  margin: auto;
+  margin: 24% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
