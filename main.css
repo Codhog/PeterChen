@@ -82,8 +82,8 @@ html {
 
 }
 
-.expcon{
-  height: 100vh;
+/* .expcon{
+   height: 100vh; 
 
 }
 
@@ -91,7 +91,7 @@ html {
   
   height: 100vh;
 
-}
+} */
 .intro{
   display: block;
   height:100vh;
@@ -124,26 +124,45 @@ html {
   /* margin-left: 16%;
   margin-top: 8%; */
 }
+.logo{
+  float: right;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 2%; 
+  /* padding:10%; */
 
+}
+.avatar {
+position: relative;
+width: 148px;
+border: 1px solid black;
+/* margin-left: 8%; */
+
+border-radius: 29%!important;
+}
 
 @media screen and (max-height: 450px) {
-  .petercon {
-    height:auto;
-  }
-  .stackcon{
-    /* margin-top: 160%; */
+  html, body {
     height: auto;
-  
+    display: flex;
+  }
+  .intro{
+    margin-top: 20%;
+  }
+  .petercon{
+    height: auto;
   }
 }
 @media screen and (max-width: 320px) {
-  .petercon {
-    height:auto;
-  }
-  .stackcon{
-    margin-top: 300%;
+  html, body {
     height: auto;
-  
+    display: flex;
+  }
+  .intro{
+    margin-top: 20%;
+  }
+  .petercon{
+    height: auto;
   }
 }
 
@@ -152,13 +171,16 @@ html {
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-width: 800px) {
   
-  body {
-    
-    position: absolute;
+  html, body {
+    height: auto;
+    display: flex;
+  }
+  .petercon{
+    height: auto;
   }
   
   .petercon h5{
-    font-size: 1.8em;
+    font-size: 1em;
   }
   .petercon .e1{
     font-size: 1.8em;
@@ -177,27 +199,11 @@ html {
     white-space: nowrap;
     
   }
-  /* .navbar-header{
-    display:inline-block;
-  }
-
-  .navbar-header img{
-    display:inline-block;
-  }
-
-  .navbar-header a{
-    display:inline-block;
-  } */
-  /* .stackcon{
-    position: relative ;
-    margin-top: 100%;
-  
-  } */
 
 
   .avatar {
     position: relative;
-    width: 100px;
+    width: 70px;
     border: 1px solid black;
     margin-left: 50px;
     
@@ -207,7 +213,7 @@ html {
   
 
   .sidenav {
-  height:210px;
+  height:110px;
   width: 100%;
   overflow: hidden;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
@@ -221,7 +227,7 @@ html {
   .sidenav .name{
     font-size: 20px;
     font-weight: bold;
-    position: absolute;
+    position: relative;
     color: white;
     width: 100%;
     margin-left: 16%;
@@ -233,22 +239,7 @@ html {
 
 } 
 
-.logo{
-    float: right;
-    overflow: hidden;
-    white-space: nowrap;
-    margin-right: 2%; 
-    /* padding:10%; */
 
-  }
-.avatar {
-  position: relative;
-  width: 148px;
-  border: 1px solid black;
-  /* margin-left: 8%; */
-  
-  border-radius: 29%!important;
-}
 
 
 
